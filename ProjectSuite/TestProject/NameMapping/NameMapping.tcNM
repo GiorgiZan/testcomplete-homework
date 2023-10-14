@@ -73,6 +73,61 @@
 													</Property>
 												</Properties>
 											</Child>
+											<Child Name="ProductNames" Key="{A15ADEBB-5158-4EDF-8D1C-4E8DF8B8DFC3}">
+												<Image FileName="1339820047" Left="75" Top="50" Right="467" Bottom="71" />
+												<TypeInfo Item0="{B0E7457A-1538-4B54-A69D-876EDFAB0BB9}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="ProductNames" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="Quantity" Key="{D551FCC5-FB66-41BE-BF07-32CC50349A6E}">
+												<Image FileName="927234764" Left="75" Top="82" Right="131" Bottom="102" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Quantity" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="UpDownEdit" Key="{C488E030-1022-4D33-98E4-A3E211E0FE53}">
+														<Image FileName="927234764" Left="77" Top="84" Right="113" Bottom="100" />
+														<TypeInfo Item0="{550EDA36-DCEF-4E00-A2A4-336E47F0D7B1}" />
+														<Properties>
+															<Property Name="ClrFullClassName">
+																<Value Value="System.Windows.Forms.UpDownBase+UpDownEdit" />
+															</Property>
+														</Properties>
+													</Child>
+												</Children>
+											</Child>
+											<Child Name="Price" Key="{1D6BB4FC-1EB0-4B96-8487-6BB494EF1DC9}">
+												<Image FileName="-724189195" Left="235" Top="82" Right="315" Bottom="102" />
+												<TypeInfo Item0="{550EDA36-DCEF-4E00-A2A4-336E47F0D7B1}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Price" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="Date" Key="{901E3283-BA5B-47C0-A2E6-108FA94AADD1}">
+												<Image FileName="1713330814" Left="115" Top="162" Right="243" Bottom="182" />
+												<TypeInfo Item0="{69B364B0-DC54-4918-904D-519C5217FB21}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Date" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="Discount" Key="{2BB82627-81F4-44B2-B4C8-27933532DC0B}">
+												<Image FileName="1735496443" Left="387" Top="82" Right="467" Bottom="102" />
+												<TypeInfo Item0="{550EDA36-DCEF-4E00-A2A4-336E47F0D7B1}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Discount" />
+													</Property>
+												</Properties>
+											</Child>
 										</Children>
 									</Child>
 									<Child Name="ButtonOK" Key="{806F9A51-FE87-49DB-A674-F907E21C9CED}">
@@ -614,6 +669,13 @@
 			<Child Name="OrderForm" Owner="{E00B8C70-AD97-433D-BE0A-B41C0440F4E8}">
 				<Child Name="Group" Owner="{33F04AB5-BA3B-40B5-93CB-D6CE4B462564}">
 					<Child Name="Customer" Owner="{D4AA6154-6507-426D-A28D-1F90380C7A2A}" />
+					<Child Name="ProductNames" Owner="{A15ADEBB-5158-4EDF-8D1C-4E8DF8B8DFC3}" />
+					<Child Name="Quantity" Owner="{D551FCC5-FB66-41BE-BF07-32CC50349A6E}">
+						<Child Name="UpDownEdit" Owner="{C488E030-1022-4D33-98E4-A3E211E0FE53}" />
+					</Child>
+					<Child Name="Price" Owner="{1D6BB4FC-1EB0-4B96-8487-6BB494EF1DC9}" />
+					<Child Name="Date" Owner="{901E3283-BA5B-47C0-A2E6-108FA94AADD1}" />
+					<Child Name="Discount" Owner="{2BB82627-81F4-44B2-B4C8-27933532DC0B}" />
 				</Child>
 				<Child Name="ButtonOK" Owner="{806F9A51-FE87-49DB-A674-F907E21C9CED}" />
 			</Child>

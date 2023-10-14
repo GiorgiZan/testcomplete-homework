@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
 	<children>
-		<folder name="test">
-			<child name="firstrun" key="{439748F0-1B0E-4D7C-9857-0BF217CD07EE}" path="firstrun.js" />
-			<child name="secondtest" key="{C44867F8-6EA3-47D5-9700-CD85D15E37E7}" path="secondtest.js" />
+		<folder name="Main">
+			<folder name="Common">
+				<child name="comm" key="{354FB2CE-28C0-4CBB-B83A-5AD02F91BDF5}" path="comm.js" />
+				<child name="Assertions" key="{8ABA0CFC-0EF4-40C1-AA0B-7F8F2D515A01}" path="Assertions.js" />
+			</folder>
+			<folder name="Data">
+				<child name="Data" key="{DA648E58-3E8C-49DF-8395-0E7F7C4AB5E6}" path="Data.js" />
+			</folder>
+			<folder name="Windows/pages">
+				<child name="AddPageClass" key="{7BB7B9D4-86E1-468A-B0F2-4B15043A7A16}" path="AddPageClass.js" />
+				<child name="OrderPage" key="{A70DC434-9DD0-4EA3-ACAD-65198BE14E00}" path="OrderPage.js" />
+			</folder>
 		</folder>
-		<folder name="main">
-			<child name="Steps" key="{76DF68FB-B1A2-4B0C-A669-8C5DCD38D58B}" path="Steps.js" />
-			<child name="SecondScenarioSteps" key="{95FB2EC2-B3A9-444D-BBD6-C60B63D8CF99}" path="SecondScenarioSteps.js" />
-		</folder>
-		<folder name="Data">
-			<child name="Data" key="{7BA5E555-A62A-43E5-9B26-7B12F3982627}" path="Data.js" />
+		<folder name="Test">
+			<folder name="Test cases">
+				<child name="OrderTest" key="{9C9582D7-9EB6-4873-B088-98DC40FF2B51}" path="OrderTest.js" />
+			</folder>
+			<folder name="Test runners">
+				<child name="OrderRun" key="{17D86EFD-3AB9-48F1-B0D6-26AC703E96A1}" path="OrderRun.js" />
+			</folder>
+			<child name="SecondTask" key="{062E09BD-D164-4707-A21C-EFFDC2233C03}" path="SecondTask.js" />
 		</folder>
 	</children>
 </Root>
