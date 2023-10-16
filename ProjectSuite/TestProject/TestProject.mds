@@ -10,7 +10,18 @@
 	<testItems key="{3BEEF432-0BF9-481B-8384-7A5E20ACFB43}" version="14">
 		<children />
 	</testItems>
-	<variables key="{56153249-BD5F-4932-89D4-97CA6ACEE4A0}" />
+	<variables key="{56153249-BD5F-4932-89D4-97CA6ACEE4A0}">
+		<data Version="4">
+			<Items>
+				<Variable Name="PersVar" Type="String" Local="True">
+					<DefValue StrValue=".??B64??.:ZGVmYXVsdCB2YWx1ZSE=" />
+				</Variable>
+				<Variable Name="TempVar" Type="String" Local="False">
+					<DefValue StrValue=".??B64??.:dGhpcyBpcyBkZWZhdWx0" />
+				</Variable>
+			</Items>
+		</data>
+	</variables>
 	<settings key="{F26BBE54-2AE0-4B25-B164-B23992CBCB5C}">
 		<settingsVersion value="15.56" />
 		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
@@ -535,7 +546,7 @@
 			</columns>
 			<data />
 		</setting>
-		<setting name="Playback_ErrHandling_OnError" type="6" rowIndex="2" colIndex="1">
+		<setting name="Playback_ErrHandling_OnError" type="6" rowIndex="0" colIndex="1">
 			<columns>
 				<column type="5" enabled="True" />
 				<column type="2" enabled="True" />
@@ -588,7 +599,7 @@
 		<setting name="Playback_Runtime_DisableMouse" type="1" value="False" />
 		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="False" />
 		<setting name="Playback_Runtime_UseCaseSensitiveParameters" type="1" value="False" />
-		<setting name="Playback_StopOnError" type="1" value="True" />
+		<setting name="Playback_StopOnError" type="1" value="False" />
 		<setting name="Playback_StopOnObjectRecognitionError" type="1" value="False" />
 		<setting name="Playback_StopOnWarning" type="1" value="False" />
 		<setting name="Playback_TestItemMaxReRunCount" type="2" value="1" />
