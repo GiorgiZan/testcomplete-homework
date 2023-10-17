@@ -1,17 +1,21 @@
-﻿const toolTipAdd = "Added by Tool Tip";
-const mainFormAdd = "Added by Main Form";
-const expectedProductNumber = 3
-const lettersForQuantity = "hundred"
-const changedPrice = "$200"
-const changedDiscount = "10%"
-const customerName = "testPriceDisc"
-const invalidDate = "0611/05/2007"
+﻿const addedWithKeyStroke = "this is all in caps11";
+const nameAfterShift = "THIS IS ALL IN CAPS!!"
+const streetLableString = "Street:"
+const streetFieldText = "თბილისი, ნუცუბიძის 72, 0177"
+const firstNumber = 111;
+const secondNumber = 231;
+const userNameAfterDeletion = ""
+const monthNames = [
+    "January", "February", "March", "April", "May", "June", "July",
+    "August", "September", "October", "November", "December" ];
+ 
 
-module.exports.toolTipAdd = toolTipAdd;
-module.exports.mainFormAdd = mainFormAdd;
-module.exports.expectedProductNumber = expectedProductNumber;
-module.exports.lettersForQuantity = lettersForQuantity;
-module.exports.changedPrice = changedPrice;
-module.exports.changedDiscount = changedDiscount;
-module.exports.customerName = customerName;
-module.exports.invalidDate = invalidDate;
+module.exports.addedWithKeyStroke = addedWithKeyStroke;
+module.exports.streetLableString = streetLableString;
+module.exports.streetFieldText = streetFieldText;
+module.exports.firstNumber = firstNumber;
+module.exports.secondNumber = secondNumber;
+module.exports.userNameAfterDeletion = userNameAfterDeletion;
+module.exports.monthNames = monthNames;
+module.exports.nameAfterShift = nameAfterShift;
+ 

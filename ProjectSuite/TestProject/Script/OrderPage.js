@@ -10,9 +10,6 @@
     this.mainForm.MainMenu.Click("Orders|New order...");
   }
 
-  newOrderByToolTip(){
-    this.toolbar.ClickItem(4);
-  }
   openCreatedUser(customerName){
     this.createdCustomer.DblClickItem(customerName);
     

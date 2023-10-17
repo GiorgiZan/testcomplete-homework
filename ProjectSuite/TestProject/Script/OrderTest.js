@@ -1,70 +1,46 @@
-﻿var OrderPage = require("OrderPage");
-var AddPageClass = require("AddPageClass");
+﻿var comm = require("comm");
+var OrderPage = require("OrderPage");
+var AddOrderPage = require("AddOrderPage");
 var Data = require("Data");
-var comm = require("comm");
 
-function addingByToolTipTest(){
-  comm.openOrder()
-  OrderPage.orderPageClass.newOrderByToolTip()
-  AddPageClass.addOrderPageClass.fillCustomerName(Data.toolTipAdd)
-  AddPageClass.addOrderPageClass.clickOk()
-  
-  OrderPage.orderPageClass.checkOrderAdditionByName(Data.toolTipAdd)
-  comm.terminateOrder()
+
+function numberConcatenationTest(){
+  var result = comm.SumOfDigitsConcatenation(Data.firstNumber, Data.secondNumber)
+  Log.Message("Concatenated sum of digits: " + result);
 }
 
-function addingByMainFormTest(){
-  comm.openOrder()
-  OrderPage.orderPageClass.newOrderByMainForm()
-  AddPageClass.addOrderPageClass.fillCustomerName(Data.mainFormAdd)
-  AddPageClass.addOrderPageClass.clickOk()
-  OrderPage.orderPageClass.checkOrderAdditionByName(Data.mainFormAdd)
-  comm.terminateOrder()
-}
-
-function checkProductNumberTest(){
-   comm.openOrder()
-   OrderPage.orderPageClass.newOrderByMainForm()
-   AddPageClass.addOrderPageClass.prdouctNumberCheck(Data.expectedProductNumber)
-     comm.terminateOrder()
+function DatePatternTest(){
+  comm.datePattern()
   
 }
-
-function addingLettersInQuantityFieldErrorTest(){
-   comm.openOrder()
-   OrderPage.orderPageClass.newOrderByMainForm()
-   AddPageClass.addOrderPageClass.addingLettersInQuantity(Data.lettersForQuantity)
-   comm.terminateOrder()
+function fillAndDeleteCustomerNameTest(){
+    comm.openOrder()
+    OrderPage.orderPageClass.newOrderByMainForm()
+    AddOrderPage.addOrderPageClass.fillCustomerNameWithKeyStroke(Data.addedWithKeyStroke)
+    AddOrderPage.addOrderPageClass.customerNameCheck(Data.nameAfterShift)
+    AddOrderPage.addOrderPageClass.deleteCustomerName()
+    AddOrderPage.addOrderPageClass.customerNameCheck(Data.userNameAfterDeletion)
+ 
+    comm.terminateOrder()
 }
 
-function discountAndPriceChangeTest(){
-   comm.openOrder()
-   OrderPage.orderPageClass.newOrderByMainForm()
-   AddPageClass.addOrderPageClass.fillCustomerName(Data.customerName)
-   AddPageClass.addOrderPageClass.setPrice(Data.changedPrice)
-   AddPageClass.addOrderPageClass.setDiscount(Data.changedDiscount)
-   AddPageClass.addOrderPageClass.clickOk()
-   OrderPage.orderPageClass.openCreatedUser(Data.customerName)
-   AddPageClass.addOrderPageClass.checkPriceAfterSave(Data.changedPrice)
-   AddPageClass.addOrderPageClass.checkDiscountAfterSave(Data.changedDiscount)
-   comm.terminateOrder()
+ function streetCityAndZipFillTest(){
+    comm.openOrder()
+    OrderPage.orderPageClass.newOrderByMainForm()
+    AddOrderPage.addOrderPageClass.checkStreetLabel(Data.streetLableString)
+    AddOrderPage.addOrderPageClass.fillStreetField(Data.streetFieldText)
+    AddOrderPage.addOrderPageClass.streetFieldCheck(Data.streetFieldText)
+    AddOrderPage.addOrderPageClass.fillCityFieldViaStreetField()
+    AddOrderPage.addOrderPageClass.fillZipFieldViaStreetField()
+    comm.terminateOrder()
+}
+
+ function runAllTests(){
    
-}
+   numberConcatenationTest()
+   DatePatternTest()
+   fillAndDeleteCustomerNameTest()
+   streetCityAndZipFillTest()
 
-function inputtinInvalidDateTest(){
-   comm.openOrder()
-   OrderPage.orderPageClass.newOrderByMainForm()
-   AddPageClass.addOrderPageClass.addingInvalidDate(Data.invalidDate)
-   comm.terminateOrder()
-}
-
-
-function runAllTests(){
-  addingByToolTipTest();
-  addingByMainFormTest();
-  checkProductNumberTest();
-  addingLettersInQuantityFieldErrorTest();
-  discountAndPriceChangeTest();
-  inputtinInvalidDateTest();
-}
-module.exports.runAllTests = runAllTests;
+ }
+module.exports.runAllTests = runAllTests; 
