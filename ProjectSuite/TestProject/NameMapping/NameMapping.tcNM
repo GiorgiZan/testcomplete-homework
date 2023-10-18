@@ -128,6 +128,51 @@
 													</Property>
 												</Properties>
 											</Child>
+											<Child Name="label8" Key="{52D1E45B-4B13-41C1-A802-59467DF76D46}">
+												<Image FileName="-650291554" Left="19" Top="228" Right="58" Bottom="245" />
+												<TypeInfo Item0="{258FFBD6-82BA-48E5-BBE2-B6812108811C}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="label8" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="Street" Key="{B92E2E9B-6E4C-44BD-99F6-8201FCEC8E1F}">
+												<Image FileName="-2017451911" Left="115" Top="226" Right="243" Bottom="246" />
+												<TypeInfo Item0="{550EDA36-DCEF-4E00-A2A4-336E47F0D7B1}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Street" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="City" Key="{0A2368B6-161B-4107-A499-CA10FAA5B58B}">
+												<Image FileName="-448190107" Left="339" Top="226" Right="467" Bottom="246" />
+												<TypeInfo Item0="{550EDA36-DCEF-4E00-A2A4-336E47F0D7B1}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="City" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="label9" Key="{E5589775-09F1-4730-98C8-012302C46DA9}">
+												<Image FileName="-1367640707" Left="251" Top="230" Right="279" Bottom="247" />
+												<TypeInfo Item0="{258FFBD6-82BA-48E5-BBE2-B6812108811C}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="label9" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="Zip" Key="{33CB0D73-8263-4ADD-981F-DD354CDF5D58}">
+												<Image FileName="858542115" Left="339" Top="258" Right="467" Bottom="278" />
+												<TypeInfo Item0="{550EDA36-DCEF-4E00-A2A4-336E47F0D7B1}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Zip" />
+													</Property>
+												</Properties>
+											</Child>
 										</Children>
 									</Child>
 									<Child Name="ButtonOK" Key="{806F9A51-FE87-49DB-A674-F907E21C9CED}">
@@ -676,6 +721,11 @@
 					<Child Name="Price" Owner="{1D6BB4FC-1EB0-4B96-8487-6BB494EF1DC9}" />
 					<Child Name="Date" Owner="{901E3283-BA5B-47C0-A2E6-108FA94AADD1}" />
 					<Child Name="Discount" Owner="{2BB82627-81F4-44B2-B4C8-27933532DC0B}" />
+					<Child Name="label8" Owner="{52D1E45B-4B13-41C1-A802-59467DF76D46}" />
+					<Child Name="Street" Owner="{B92E2E9B-6E4C-44BD-99F6-8201FCEC8E1F}" />
+					<Child Name="City" Owner="{0A2368B6-161B-4107-A499-CA10FAA5B58B}" />
+					<Child Name="label9" Owner="{E5589775-09F1-4730-98C8-012302C46DA9}" />
+					<Child Name="Zip" Owner="{33CB0D73-8263-4ADD-981F-DD354CDF5D58}" />
 				</Child>
 				<Child Name="ButtonOK" Owner="{806F9A51-FE87-49DB-A674-F907E21C9CED}" />
 			</Child>

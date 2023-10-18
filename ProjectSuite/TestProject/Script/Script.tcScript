@@ -5,13 +5,14 @@
 			<folder name="Common">
 				<child name="comm" key="{354FB2CE-28C0-4CBB-B83A-5AD02F91BDF5}" path="comm.js" />
 				<child name="Assertions" key="{8ABA0CFC-0EF4-40C1-AA0B-7F8F2D515A01}" path="Assertions.js" />
+				<child name="Events" key="{BDB78753-695A-406F-B776-95A497B9F690}" path="Events.js" />
 			</folder>
 			<folder name="Data">
 				<child name="Data" key="{DA648E58-3E8C-49DF-8395-0E7F7C4AB5E6}" path="Data.js" />
 			</folder>
 			<folder name="Windows/pages">
-				<child name="AddPageClass" key="{7BB7B9D4-86E1-468A-B0F2-4B15043A7A16}" path="AddPageClass.js" />
-				<child name="OrderPage" key="{A70DC434-9DD0-4EA3-ACAD-65198BE14E00}" path="OrderPage.js" />
+				<child name="AddOrderPage" key="{CABE1E66-F86B-490D-9673-0CBE31C44AB8}" path="AddOrderPage.js" />
+				<child name="OrderPage" key="{ABCDF347-647C-4E70-9B04-2F4A473EE2B0}" path="OrderPage.js" />
 			</folder>
 		</folder>
 		<folder name="Test">
@@ -21,7 +22,6 @@
 			<folder name="Test runners">
 				<child name="OrderRun" key="{17D86EFD-3AB9-48F1-B0D6-26AC703E96A1}" path="OrderRun.js" />
 			</folder>
-			<child name="SecondTask" key="{062E09BD-D164-4707-A21C-EFFDC2233C03}" path="SecondTask.js" />
 		</folder>
 	</children>
 </Root>
