@@ -4,43 +4,63 @@ var AddOrderPage = require("AddOrderPage");
 var Data = require("Data");
 
 
-function numberConcatenationTest(){
-  var result = comm.SumOfDigitsConcatenation(Data.firstNumber, Data.secondNumber)
-  Log.Message("Concatenated sum of digits: " + result);
-}
-
-function DatePatternTest(){
-  comm.datePattern()
-  
-}
-function fillAndDeleteCustomerNameTest(){
-    comm.openOrder()
-    OrderPage.orderPageClass.newOrderByMainForm()
-    AddOrderPage.addOrderPageClass.fillCustomerNameWithKeyStroke(Data.addedWithKeyStroke)
-    AddOrderPage.addOrderPageClass.customerNameCheck(Data.nameAfterShift)
-    AddOrderPage.addOrderPageClass.deleteCustomerName()
-    AddOrderPage.addOrderPageClass.customerNameCheck(Data.userNameAfterDeletion)
  
-    comm.terminateOrder()
+function radioButtonsTest(){
+  comm.openOrder()
+  OrderPage.orderPageClass.newOrderByMainForm()
+  AddOrderPage.addOrderPageClass.checkRadioButtonQuantity(Data.expectedRadioButtonsNumber)
+  AddOrderPage.addOrderPageClass.clickOk()
+  comm.terminateOrder()
 }
-
- function streetCityAndZipFillTest(){
+ 
+ 
+ 
+ function generateAndShowCardNoTest(){
     comm.openOrder()
     OrderPage.orderPageClass.newOrderByMainForm()
-    AddOrderPage.addOrderPageClass.checkStreetLabel(Data.streetLableString)
-    AddOrderPage.addOrderPageClass.fillStreetField(Data.streetFieldText)
-    AddOrderPage.addOrderPageClass.streetFieldCheck(Data.streetFieldText)
-    AddOrderPage.addOrderPageClass.fillCityFieldViaStreetField()
-    AddOrderPage.addOrderPageClass.fillZipFieldViaStreetField()
+    AddOrderPage.addOrderPageClass.fillCustomerName(Data.customerName)
+    AddOrderPage.addOrderPageClass.fillCardNo(comm.generateRandomNumber())
+    AddOrderPage.addOrderPageClass.printCopiedCardNoValueWithKeystrokes()
+    AddOrderPage.addOrderPageClass.clickOk()
+    OrderPage.orderPageClass.openCreatedUser(Data.customerName)
+    AddOrderPage.addOrderPageClass.fillCardNo(comm.generateRandomNumber())
+    AddOrderPage.addOrderPageClass.clickOk()
+    OrderPage.orderPageClass.openCreatedUser(Data.customerName)
+    AddOrderPage.addOrderPageClass.checkingIfCardNoHasBeenRedacted()
     comm.terminateOrder()
 }
 
- function runAllTests(){
-   
-   numberConcatenationTest()
-   DatePatternTest()
-   fillAndDeleteCustomerNameTest()
-   streetCityAndZipFillTest()
+
+
+ 
+ function setKeyFromActivityTest()
+ {
+    comm.openOrder()
+    OrderPage.orderPageClass.newOrderByMainForm()
+    AddOrderPage.addOrderPageClass.fillCardNo(comm.getRequest(Data.activityLink).key)
+    AddOrderPage.addOrderPageClass.clickOk()
+    comm.terminateOrder()
+ }
+ 
+  
+ function setActivityyFromMusicTypeTest()
+ {
+    comm.openOrder()
+    OrderPage.orderPageClass.newOrderByMainForm()
+    AddOrderPage.addOrderPageClass.fillCustomerName(comm.getRequest(aqString.Concat(Data.activityLink, Data.typeMusic)).activity);
+    AddOrderPage.addOrderPageClass.clickOk()
+    comm.terminateOrder()
+ }
+ 
+ 
+  function runAllTests(){
+   radioButtonsTest()
+   generateAndShowCardNoTest()
+   setKeyFromActivityTest()
+   setActivityyFromMusicTypeTest()
 
  }
-module.exports.runAllTests = runAllTests; 
+
+
+ 
+module.exports.runAllTests = runAllTests;

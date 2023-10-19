@@ -5,14 +5,13 @@
 			<folder name="Common">
 				<child name="comm" key="{354FB2CE-28C0-4CBB-B83A-5AD02F91BDF5}" path="comm.js" />
 				<child name="Assertions" key="{8ABA0CFC-0EF4-40C1-AA0B-7F8F2D515A01}" path="Assertions.js" />
-				<child name="Events" key="{BDB78753-695A-406F-B776-95A497B9F690}" path="Events.js" />
 			</folder>
 			<folder name="Data">
 				<child name="Data" key="{DA648E58-3E8C-49DF-8395-0E7F7C4AB5E6}" path="Data.js" />
 			</folder>
 			<folder name="Windows/pages">
-				<child name="AddOrderPage" key="{CABE1E66-F86B-490D-9673-0CBE31C44AB8}" path="AddOrderPage.js" />
-				<child name="OrderPage" key="{ABCDF347-647C-4E70-9B04-2F4A473EE2B0}" path="OrderPage.js" />
+				<child name="AddOrderPage" key="{4EC3CF04-F6D9-4C84-9F74-B83080E29C31}" path="AddOrderPage.js" />
+				<child name="OrderPage" key="{717A374C-0ACE-4695-8C3C-B236D9DDB2CF}" path="OrderPage.js" />
 			</folder>
 		</folder>
 		<folder name="Test">

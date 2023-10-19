@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root signature="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}" version="1400" key="{DCE4DB0C-92F4-4FB0-BB31-0A1BFEB04F00}" typeId="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}">
-	<config nodeName="Events" tlbHistory="" />
+	<config nodeName="Events" tlbHistory="&quot;TestComplete general events&quot;" />
 	<testData />
 	<data />
-	<children>
-		<child key="{1AC9B163-94B0-4558-9D97-F14CB8E11571}">
-			<config nodeName="EventControl" lastOpenedTLB="" generatedCLSID="{5F5C945D-D340-47E1-8152-4DEB29736D70}" generatedTLBKey="{573A903D-6D5F-41C8-8F0F-131707A41FDD}" generatedEventsKey="{D3501C92-2360-4454-8CB5-9207040DEFCF}" generatedTLBDesc="TestComplete EventControl Control - 10/17/2023 15:20:28">
-				<eventInfo infoTLBVer="version.dll" infoGUID="{F5856842-4323-49FD-B806-36E22179EF8A}" infoID="1610743809" infoControlName="Test Engine Events" infoEventName="OnStopTest" infoEventRealName="OnStopTest" infoDescription="Occurs when TestComplete stops running a test or when the execution of a test item is over." />
-				<eventInfo infoTLBVer="version.dll" infoGUID="{4C03E9F2-BB22-4E21-B2E7-E51B754FCBBA}" infoID="1610743811" infoControlName="General Events" infoEventName="OnLogError" infoEventRealName="OnLogError" infoDescription="Occurs when an error message is posted to the test log." />
-				<eventInfo infoTLBVer="version.dll" infoGUID="{F5856842-4323-49FD-B806-36E22179EF8A}" infoID="1610743808" infoControlName="Test Engine Events" infoEventName="OnStartTest" infoEventRealName="OnStartTest" infoDescription="Occurs when TestComplete starts running a test (whether it is run from the UI or command line, or as a project test item)." />
-				<handlerInfo handlerName="EventControl_OnLogError" handlerMoniker="{BDB78753-695A-406F-B776-95A497B9F690}EventControl_OnLogError" handlerEventName="OnLogError" handlerRealIID="{4C03E9F2-BB22-4E21-B2E7-E51B754FCBBA}" handlerRealDispID="1610743811" />
-				<handlerInfo handlerName="EventControl_OnStopTest" handlerMoniker="{BDB78753-695A-406F-B776-95A497B9F690}EventControl_OnStopTest" handlerEventName="OnStopTest" handlerRealIID="{F5856842-4323-49FD-B806-36E22179EF8A}" handlerRealDispID="1610743809" />
-				<handlerInfo handlerName="EventControl_OnStartTest" handlerMoniker="{BDB78753-695A-406F-B776-95A497B9F690}EventControl_OnStartTest" handlerEventName="OnStartTest" handlerRealIID="{F5856842-4323-49FD-B806-36E22179EF8A}" handlerRealDispID="1610743808" />
-			</config>
-			<testData />
-			<data />
-		</child>
-	</children>
+	<children />
 </Root>

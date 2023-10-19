@@ -2,64 +2,54 @@
 
 var Assertions = require("Assertions");
 
-
 class AddOrderPageClass{
   constructor(){
     this.orderForm = Aliases.Orders.OrderForm;
     this.orderFormGroup =  this.orderForm.Group
-    this.customerName = this.orderFormGroup.Customer;
     this.addNewOrderClickOkButton = this.orderForm.ButtonOK;
-    this.streetLabel = this.orderFormGroup.label8
-    this.streetField = this.orderFormGroup.Street
-    this.cityField = this.orderFormGroup.City
-    this.zipField = this.orderFormGroup.Zip
+    this.customerName = this.orderFormGroup.Customer;
+    this.cardNo = this.orderFormGroup.CardNo
     
   }
- 
   
-  fillCustomerNameWithKeyStroke(name){
-    Sys.Desktop.KeyDown(VK_SHIFT);
+  fillCustomerName(name){
     this.customerName.Keys(name);
-    Sys.Desktop.KeyUp(VK_SHIFT);
-    
   }
-  fillStreetField(fieldText){
-    this.streetField.Keys(fieldText)
+  
+   fillCardNo(numbers){
+    this.cardNo.Keys(numbers)
+  }
+
+
+  checkRadioButtonQuantity(radioQuantity){
+     var radioButtons =  this.orderFormGroup.FindAllChildren("ClrClassName", "RadioButton")
+     Assertions.assertEquals(radioButtons.length, radioQuantity);
   }
 
  
-  fillCityFieldViaStreetField(){
-      var splitedStreetField =  comm.splitTextByComma(this.streetField.wText)
-      this.cityField.Keys(splitedStreetField[0])
-      
+  printCopiedCardNoValueWithKeystrokes(){
+    this.cardNo.Keys("^a^c")
+    Log.Message("Printing copied generated card number : " + comm.returnCopiedValue())
+    
   }
-    fillZipFieldViaStreetField(){
-      var splitedStreetField =  comm.splitTextByComma(this.streetField.wText)
-      this.zipField.Keys(splitedStreetField[splitedStreetField.length - 1])
-      
-  }
-  
+ 
+ 
 
-
-  deleteCustomerName(){
-      this.customerName.Keys("^a[BS]")
-  }
-  
-  checkStreetLabel(street){
-    Assertions.assertEquals(this.streetLabel.WndCaption, street)
-  }
 
   clickOk(){
     this.addNewOrderClickOkButton.ClickButton();
   }
   
-   customerNameCheck(name){
-      Assertions.assertEquals(this.customerName.wText, name)
-  }
-   streetFieldCheck(street){
-      Assertions.assertEquals(this.streetField.wText, street)
-  }
   
+  
+  checkingIfCardNoHasBeenRedacted(){
+         if (this.cardNo.wText !== comm.returnCopiedValue()) {
+        Log.Checkpoint("Card number has been redacted!" );
+       } else {
+         Log.Error("Redaction failed, card number is the same");
+    }
+ 
+  }
  
 
 }
@@ -68,3 +58,6 @@ class AddOrderPageClass{
 var addOrderPageClass = new AddOrderPageClass();
 
 module.exports.addOrderPageClass = addOrderPageClass;
+
+
+
