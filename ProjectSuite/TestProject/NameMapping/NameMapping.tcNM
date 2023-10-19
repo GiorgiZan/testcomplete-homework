@@ -173,6 +173,51 @@
 													</Property>
 												</Properties>
 											</Child>
+											<Child Name="CardNo" Key="{3390A3B7-9579-4B2E-BCA4-6CD779534DA1}">
+												<Image FileName="-114729181" Left="115" Top="370" Right="467" Bottom="390" />
+												<TypeInfo Item0="{550EDA36-DCEF-4E00-A2A4-336E47F0D7B1}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="CardNo" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="AE" Key="{AEFF8FC7-55D0-4B62-8CCD-1A43D915F52C}">
+												<Image FileName="-818202438" Left="115" Top="338" Right="243" Bottom="362" />
+												<TypeInfo Item0="{568BE887-8D97-4F91-8A7A-7B5593DBB3E5}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="AE" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="MasterCard" Key="{8AAA2420-16D8-4B04-8F1B-55AB906F319E}">
+												<Image FileName="-1203147736" Left="115" Top="314" Right="243" Bottom="338" />
+												<TypeInfo Item0="{568BE887-8D97-4F91-8A7A-7B5593DBB3E5}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="MasterCard" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="Visa" Key="{6307BB7F-6196-4654-855B-20B4EB0B7E85}">
+												<Image FileName="-702427473" Left="115" Top="290" Right="243" Bottom="314" />
+												<TypeInfo Item0="{568BE887-8D97-4F91-8A7A-7B5593DBB3E5}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="Visa" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="ExpDate" Key="{F2296969-550D-446B-BFD1-FC613C50BFF7}">
+												<Image FileName="-294240323" Left="115" Top="402" Right="243" Bottom="422" />
+												<TypeInfo Item0="{69B364B0-DC54-4918-904D-519C5217FB21}" />
+												<Properties>
+													<Property Name="WinFormsControlName">
+														<Value Value="ExpDate" />
+													</Property>
+												</Properties>
+											</Child>
 										</Children>
 									</Child>
 									<Child Name="ButtonOK" Key="{806F9A51-FE87-49DB-A674-F907E21C9CED}">
@@ -726,6 +771,11 @@
 					<Child Name="City" Owner="{0A2368B6-161B-4107-A499-CA10FAA5B58B}" />
 					<Child Name="label9" Owner="{E5589775-09F1-4730-98C8-012302C46DA9}" />
 					<Child Name="Zip" Owner="{33CB0D73-8263-4ADD-981F-DD354CDF5D58}" />
+					<Child Name="CardNo" Owner="{3390A3B7-9579-4B2E-BCA4-6CD779534DA1}" />
+					<Child Name="AE" Owner="{AEFF8FC7-55D0-4B62-8CCD-1A43D915F52C}" />
+					<Child Name="MasterCard" Owner="{8AAA2420-16D8-4B04-8F1B-55AB906F319E}" />
+					<Child Name="Visa" Owner="{6307BB7F-6196-4654-855B-20B4EB0B7E85}" />
+					<Child Name="ExpDate" Owner="{F2296969-550D-446B-BFD1-FC613C50BFF7}" />
 				</Child>
 				<Child Name="ButtonOK" Owner="{806F9A51-FE87-49DB-A674-F907E21C9CED}" />
 			</Child>
